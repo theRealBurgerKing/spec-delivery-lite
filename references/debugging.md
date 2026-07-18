@@ -1,21 +1,17 @@
-# Evidence-Based Debugging
+# 基于证据的调试
 
-Follow this sequence:
+遵循以下顺序：
 
 ```text
-Reproduce → locate boundary → state one hypothesis → run a minimal experiment
-→ fix the root cause → run regression verification
+复现 → 定位边界 → 提出一个假设 → 执行最小实验 → 修复根因 → 执行回归验证
 ```
 
-- Reproduce the observed symptom and capture the relevant command, input,
-  output, and environment boundary.
-- Narrow the failure to the smallest responsible component or interaction.
-- State one falsifiable hypothesis before changing production code.
-- Run the smallest experiment that can disprove or support that hypothesis.
-- Fix the root cause, not a downstream symptom. Add or update a regression test
-  when feasible.
-- Re-run the reproducer and all relevant regression checks after the final edit.
+- 复现观察到的症状，记录相关命令、输入、输出和环境边界。
+- 将失败缩小到最小的责任组件或交互。
+- 修改生产代码前，提出一个可证伪的假设。
+- 执行能够证伪或支持该假设的最小实验。
+- 修复根因而非下游症状；可行时新增或更新回归测试。
+- 最终编辑后重新执行复现步骤和所有相关回归检查。
 
-If the user asks only for diagnosis, stop after reporting the evidence and
-likely cause. After two failed hypotheses in the same direction, revisit the
-reproduction boundary and architectural assumptions instead of stacking fixes.
+用户只要求诊断时，在报告证据和可能原因后停止。同一方向的两次假设失败后，应重新检查
+复现边界和架构假设，而不是叠加修复。

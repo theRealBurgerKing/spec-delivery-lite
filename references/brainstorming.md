@@ -1,18 +1,13 @@
-# Risk-Driven Brainstorming
+# 风险驱动的方案澄清
 
-Use this reference only for high-risk work. First inspect the relevant project
-context. Ask the smallest number of questions needed to resolve scope, success
-criteria, and irreversible choices; ask one question at a time when dialogue is
-needed.
+仅对 High-risk 工作使用本 reference。先检查相关项目上下文；以最少问题澄清范围、
+成功标准和不可逆选择；需要对话时一次只问一个问题。
 
-Present two or three materially different approaches. For each, state the
-effect on behavior, complexity, compatibility, risk, and reversibility. Make a
-recommendation and explain why it best fits the existing codebase and stated
-constraints.
+提出两到三个有实质差异的方案。对每个方案说明其对行为、复杂度、兼容性、风险和可逆性
+的影响；给出推荐并解释其为何最适合现有代码库和既定约束。
 
-Before implementation, obtain approval for decisions that change architecture,
-public behavior, data contracts, security/privacy posture, or external side
-effects. Record the approved outcome in `brief.md` or `design.md`.
+实施前，对改变架构、公开行为、数据契约、安全/隐私态势或外部副作用的决策取得批准。将
+获批结果记录在 `brief.md` 或 `design.md`，并在 `change.yaml` 中记录确认
+（`approval.required`、`confirmed_by`、`confirmed_at`）。
 
-Do not invoke this process for a clear, narrow, safely reversible change merely
-to satisfy a process step.
+不要仅为满足流程步骤，就对明确、范围窄且可安全回滚的变更启动本流程。

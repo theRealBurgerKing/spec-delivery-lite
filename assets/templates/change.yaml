@@ -1,0 +1,14 @@
+format_version: 1
+status: planned # 计划中 | 已批准 | 实施中 | 已阻塞 | 已验证
+risk: tracked # 直接 | 已跟踪 | 高风险
+risk_reasons:
+  - "<适用该分类的原因>"
+approval:
+  required: false
+  confirmed_by: null
+  confirmed_at: null
+blocked_reason: null
+acceptance:
+  - id: AC-01
+    status: pending # 待验证 | 已验证 | 已豁免
+    waiver: null

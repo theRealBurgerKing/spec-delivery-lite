@@ -1,17 +1,18 @@
-# Change: <change-name>
+# 变更：<change-name>
 
-## Goal and scope
+## 目标与范围
 
-<Problem, intended outcome, affected users, and in-scope behavior.>
+<问题、预期结果、受影响用户和本次范围内的行为。>
 
-## Non-goals
+## 非目标
 
-- <Explicitly excluded work.>
+- <明确排除的工作。>
 
-## Acceptance conditions
+## 验收条件
 
-- <Observable behavior or boundary condition.>
+- AC-01：给定 <前置条件>，当 <执行者进行操作> 时，系统应 <可观察结果或边界条件>。
+  - 验证类型：<自动化 / 手动>。
 
-## Impact surface
+## 影响面
 
-<Affected modules, public interfaces, data, permissions, or external services.>
+<受影响的模块、公开接口、数据、权限或外部服务。>

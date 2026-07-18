@@ -1,19 +1,19 @@
-# Design: <change-name>
+# 设计：<change-name>
 
-## Context
+## 背景
 
-<Why a design decision is needed.>
+<为何需要设计决策。>
 
-## Options
+## 方案
 
-| Option | Benefits | Costs and risks |
+| 方案 | 收益 | 成本与风险 |
 |---|---|---|
-| <option> | <benefits> | <costs> |
+| <方案> | <收益> | <成本> |
 
-## Decision
+## 决策
 
-<Chosen approach and rationale.>
+<选择的方案及理由。>
 
-## Contract and rollout impact
+## 契约与发布影响
 
-<API, data, compatibility, migration, security, rollback, or external side-effect impact.>
+<API、数据、兼容性、迁移、安全、回滚或外部副作用的影响。>

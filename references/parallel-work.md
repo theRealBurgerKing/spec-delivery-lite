@@ -1,17 +1,13 @@
-# Safe Parallel Work
+# 安全并行工作
 
-Dispatch parallel agents only when every proposed task:
+仅当每项拟并行任务都满足以下条件时，才派发并行 Agent：
 
-1. belongs to an independent problem domain;
-2. has no dependency on another concurrent task's output;
-3. does not modify the same files, interfaces, tests, database fixtures, or
-   external resources; and
-4. has a clear integration and verification boundary.
+1. 属于独立问题域；
+2. 不依赖其他并发任务的输出；
+3. 不修改相同的文件、接口、测试、数据库夹具或外部资源；并且
+4. 有清晰的集成与验证边界。
 
-Dispatch all eligible tasks in the same round. Keep scope and integration
-decisions with the primary agent. On return, inspect actual artifacts and
-conflicts rather than trusting reports. Run each task's verification, then run
-a combined verification that covers their interaction.
+在同一轮派发所有符合条件的任务。由主 Agent 保留范围和集成决策权。任务返回后检查实际
+artifact 和冲突，而不是相信报告；先执行每项任务的验证，再执行覆盖它们交互的组合验证。
 
-Use sequential work when tasks share a root cause, touch a shared contract, or
-need a decision produced by an earlier task.
+任务共享根因、触及共享契约，或需要前序任务产出的决策时，采用串行工作。

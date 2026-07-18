@@ -1,14 +1,12 @@
-# Review Feedback
+# 评审反馈
 
-Evaluate each review item against the current code, tests, and approved change.
-Classify it before editing:
+根据当前代码、测试和已批准的变更评估每条评审意见；编辑前先分类：
 
-| Classification | Meaning | Action |
+| 分类 | 含义 | 行动 |
 |---|---|---|
-| Accept | The finding is correct | Fix it and verify the relevant behavior. |
-| Adapt | The problem is real but the proposed fix does not fit | Explain the alternative, implement it, and verify it. |
-| Disagree | The finding conflicts with code facts, compatibility, or approved requirements | State concise evidence; do not make an unnecessary change. |
-| Decision needed | The finding changes product scope, architecture, or an approved trade-off | Present the choice to the user. |
+| Accept | 发现正确 | 修复并验证相关行为。 |
+| Adapt | 问题真实存在，但建议的修复不适合 | 说明替代方案、实施并验证。 |
+| Disagree | 意见与代码事实、兼容性或已批准需求冲突 | 给出简洁证据；不要作不必要的修改。 |
+| Decision needed | 意见改变产品范围、架构或已批准取舍 | 将选择交给用户。 |
 
-Do not close a security, data-loss, or correctness finding merely by disagreeing.
-Provide equivalent safety evidence or escalate it as a decision.
+不要仅以 Disagree 关闭安全、数据丢失或正确性问题；应提供等效的安全证据或升级为待决策事项。

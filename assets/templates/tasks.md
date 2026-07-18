@@ -1,5 +1,5 @@
-# Tasks: <change-name>
+# 任务：<change-name>
 
-- [ ] <Task title>
-  - Acceptance: <Linked acceptance condition.>
-  - Verification: `<command or manual scenario>`.
+- [ ] <任务标题>
+  - 验收条件：AC-01
+  - 验证：`<命令或手动场景>`。

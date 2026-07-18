@@ -1,17 +1,23 @@
-# Verification: <change-name>
+# 验证：<change-name>
 
-## Acceptance evidence
+## 验收证据
 
-| Acceptance condition | Evidence | Result |
+| 验收 ID | 证据 | 结果 |
 |---|---|---|
-| <condition> | <test, build output, code path, or manual scenario> | <pass / gap> |
+| AC-01 | <测试、构建输出、代码路径或可复现的手动场景> | <verified / waived / gap> |
 
-## Fresh checks
+## 证据上下文
 
-| Check | Command or scenario | Result | Notes |
+- 执行时间：<ISO-8601 时间戳>
+- 代码版本：<提交 SHA 或不可用>
+- 环境：<操作系统、运行时、相关服务或测试环境>
+
+## 最新检查
+
+| 检查项 | 命令或场景 | 结果 | 备注 |
 |---|---|---|---|
-| Tests | `<command>` | <exit code and result> | <warnings or coverage limit> |
+| 测试 | `<命令>` | <退出码、失败数和结果> | <警告或覆盖范围限制> |
 
-## Known gaps
+## 已知缺口
 
-- <None, or explicitly unverified item and reason.>
+- <无，或明确未验证的事项及原因。>

@@ -1,17 +1,17 @@
-# Verification Before Completion
+# 完成前验证
 
-Before saying a change is complete, fixed, passing, ready to commit, or ready
-to archive:
+在声称变更已完成、已修复、已通过、可提交或可归档前：
 
-1. State the exact claim.
-2. Identify checks that prove that claim.
-3. Run those checks after the final modification.
-4. Read the exit status, failure count, warnings, and actual scope of coverage.
-5. Report only what the fresh evidence supports.
+1. 说明精确结论。
+2. 确定能证明该结论的检查。
+3. 在最终修改后执行这些检查。
+4. 阅读退出状态、失败数、警告和实际覆盖范围。
+5. 仅报告新鲜证据能支持的内容。
 
-For a tracked change, use `assets/templates/verification.md` to map every
-acceptance condition to a test, build output, code inspection, or documented
-manual scenario. A green test suite alone does not prove every requirement.
+对于 Tracked 变更，使用 `assets/templates/verification.md` 将每个 `AC-##` 验收 ID
+映射到测试、构建输出、代码检查或已记录的手动场景。记录执行时间、代码版本、环境、退出码、
+失败数和警告。仅当证据新鲜时，才将 `change.yaml` 中对应条目更新为 `verified`。全套测试
+通过本身不能证明所有需求。
 
-If a required check cannot run, report it as an unverified gap. Do not replace
-fresh evidence with confidence, prior output, or an agent report.
+若必需检查无法运行，将其报告为未验证缺口。仅在用户明确接受原因后标记为 `waived`，并将
+原因记入 `change.yaml`。不要用信心、先前输出或 Agent 报告替代新鲜证据。
