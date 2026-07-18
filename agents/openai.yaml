@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec Delivery Lite"
+  short_description: "轻量、循证的软件变更工作流"
+  default_prompt: "Use $spec-delivery-lite to plan and deliver a software change with explicit scope and evidence-based verification."
