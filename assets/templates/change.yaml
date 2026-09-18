@@ -1,14 +1,33 @@
-format_version: 1
-status: planned # 计划中 | 已批准 | 实施中 | 已阻塞 | 已验证
-risk: tracked # 直接 | 已跟踪 | 高风险
-risk_reasons:
-  - "<适用该分类的原因>"
-approval:
-  required: false
-  confirmed_by: null
-  confirmed_at: null
-blocked_reason: null
+format_version: 2
+requirements:
+  - id: R-01
+    title: <可独立验收的需求>
+    level: tracked # direct | tracked | high
+    level_reasons:
+      - <判级原因>
+    state: planned
+    blocked_from: null
+    blocked_reason: null
+    developer: null
+    reviewer: null
+    self_review_reason: null
+    approval:
+      required: false # high 必须为 true
+      confirmed_by: null
+      confirmed_at: null
+    acceptance_ids:
+      - AC-01
+tasks:
+  - id: T-01
+    requirement_ids:
+      - R-01
+    status: pending
 acceptance:
   - id: AC-01
-    status: pending # 待验证 | 已验证 | 已豁免
-    waiver: null
+    requirement_id: R-01
+    criterion: 给定 <前置条件>，当 <操作> 时，应观察到 <结果>
+    status: pending
+    evidence: null
+    waiver_reason: null
+    waiver_approved_by: null
+history: []
